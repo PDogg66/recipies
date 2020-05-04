@@ -1,38 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
 .App {
+  font-family: "Ubuntu", sans-serif;
+  width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+}
+.Top {
+  height: 5em;
+  width: 100%;
+
+  border-bottom: 1px solid #d0d3d4;
+}
+form {
+  border: none;
+  height: 5em;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+form img {
+  width: 3em;
+}
+input:focus {
+  outline: none;
+}
+input[type="text"] {
+  font-size: 1.4rem;
+  font-family: "Ubuntu", sans-serif;
+}
+button:focus {
+  outline: none;
+}
+.search-bar {
+  width: 60%;
+  height: 1.5em;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid black;
+}
+.search-button {
+  background: none;
+  border: none;
+}
+.search-button img {
+  width: 3em;
+}
+.main {
+  width: 90%;
+  max-width: 95vw;
+  margin: 0 auto;
+  display: block;
+}
+.main h1 {
+  font-size: 2.2rem;
+}
+.main-title {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-row-gap: 8em;
+  justify-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-container h1 {
+  font-size: 1.4rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container img {
+  width: 250px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bot {
+  margin-top: 6em;
+  width: 100%;
+  height: 16em;
+  background-color: #01020b;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #d0d3d4;
+}
+.bot img {
+  width: 5.5em;
+}
+.bot ul {
+  list-style: none;
+}
+.bot li {
+  line-height: 2em;
+}
+.bot li:hover {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bot h1 {
+  color: orange;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.bot h1:hover {
+  color: orangered;
+}
+@media screen and (max-width: 400px) {
+  .App {
+    font-size: 0.6rem;
   }
 }
